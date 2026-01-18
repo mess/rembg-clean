@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rembg-clean"
+version = "0.1.0"
+dependencies = [
+    "rembg",
+    "onnxruntime",
+    "pillow",
+    "numpy",
+    "click",
+    "aiohttp",
+    "asyncer",
+    "watchdog",
+    "filetype",
+    "gradio"
+]
+
+[project.scripts]
+rembg-clean = "rembg_clean.cli:main"
